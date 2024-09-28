@@ -1,0 +1,16 @@
+.page2{
+    p > .message{
+            font-size: 1.2rem;
+            font-weight: 600;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .card{
+            border: 1px solid green;
+            padding: 10px;
+            margin: 20px;
+        }
+    }
+}
