@@ -3,12 +3,28 @@
             font-size: 1.2rem;
             font-weight: 600;
     }
+    .search-box{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        border: 2px solid black;
+        padding: 5px 10px;
+        margin: 20px;
+        border-radius: 5px;
+        input{
+            border: none;
+            outline: none;
+            font-size: large;
+            padding: 0 10px;
+            width: 100%;
+        }
+    }
 
     .cards{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         .card{
-            border: 1px solid green;
+            border: 2px solid black;
             padding: 10px;
             margin: 20px;
         }

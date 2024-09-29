@@ -4,6 +4,7 @@ import { thunk } from "redux-thunk";
 
 export const actions={
     C_PIN : "C_PIN",
+    C_DATA : "C_DATA"
 }
 const initailState = {
     postOffice : null,
@@ -11,8 +12,13 @@ const initailState = {
 }
 const dataReducer = (state=initailState, action)=>{
     if(action.type===actions.C_PIN){
-        state.pincode = action.pincode
+        state.pincode = action.payload.pincode
         return {...state}
+    }
+
+    if(action.type === actions.C_DATA){
+        state.postOffice = action.payload.data[0];
+        return {...state};
     }
     return state;
 }
