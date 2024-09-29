@@ -9,8 +9,8 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={HomeScreen}/>
-          <Route path="/pin-area/:pincode" Component={Page2}/>
+          <Route path="/React_F4_c2" Component={HomeScreen}/>
+          <Route path="/React_F4_c2/pin-area/:pincode" Component={Page2}/>
         </Routes>
       </BrowserRouter>
     </Provider>
